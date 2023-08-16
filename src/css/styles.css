@@ -1,0 +1,124 @@
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-blue);
+    font-size: 13px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+}
+
+.card img{
+    border-radius: 10px 0 0 10px;
+}
+
+.card .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+    width: 60%;
+}
+
+.card .info h1{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--dark-blue);
+}
+
+.card .info p{
+    color: var(--gray-blue);
+}
+
+.card .pessoal-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.pessoal-info div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pessoal-info div img{
+    border-radius: 50%;
+    height: 60px;
+}
+
+.pessoal-info div .description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.pessoal-info .description span:first-child{
+    color: var(--very-dark);
+    font-weight: 700;
+}
+
+.pessoal-info .btn{
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(158, 175, 194, 0.7);
+    color: var(--dark-blue);
+    cursor: pointer;
+    position: relative;
+}
+
+.pessoal-info .btn:hover{
+    background-color: var(--very-dark);
+    color: var(--light-blue);
+}
+
+.btn-selected{
+    background-color: var(--very-dark) !important;
+    color: var(--light-blue) !important;
+}
+
+.pessoal-info .share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: var(--very-dark);
+    padding: 0 10px;
+    position: absolute;
+    right: -40px;
+    bottom: 80px;
+}
+
+.share.hide{
+    display: none;
+}
+
+.share i{
+    font-size: 18px;
+    color: var(--light-blue);
+}
+
+.share .seta{
+    position: absolute;
+    bottom: -20px;
+    font-size: 30px;
+    color: var(--very-dark);
+}
